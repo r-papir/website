@@ -18,7 +18,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', -apple-system, sans-serif;
+  font-family: 'Raleway', -apple-system, sans-serif;
   color: var(--text);
   background: var(--bg);
   font-size: 16px;
@@ -64,9 +64,7 @@ a:hover {
 }
 
 .masthead__inner nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-left: auto;
 }
 
 .site-title {
