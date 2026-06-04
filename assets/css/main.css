@@ -76,6 +76,7 @@ a:hover {
   color: var(--text);
   text-decoration: none;
   letter-spacing: 0.05em;
+  max-width: 40%;
 }
 
 .site-title:hover {
