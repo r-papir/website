@@ -9,7 +9,7 @@
   --border: #f2f3f3;
   --border-dark: #bdc1c4;
   --primary: #2f7f93;
-  --masthead-height: 70px;
+  --masthead-height: 80px;
   --sidebar-width: 260px;
 }
 
@@ -56,7 +56,7 @@ a:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.65);
 }
 
 .masthead__inner {
