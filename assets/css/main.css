@@ -60,6 +60,13 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.masthead__inner nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .site-title {
