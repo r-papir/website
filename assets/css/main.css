@@ -196,9 +196,9 @@ a:hover {
   to   { opacity: 1; transform: scale(1); }
 }
 
-@keyframes moveToLeft {
+@keyframes moveToRight {
   from { opacity: 1; transform: translateX(0); }
-  to   { opacity: 0; transform: translateX(-100%); }
+  to   { opacity: 0; transform: translateX(100%); }
 }
 
 .main-content {
@@ -212,7 +212,7 @@ a:hover {
 }
 
 .main-content.is-exiting {
-  animation: moveToLeft 0.35s ease forwards;
+  animation: moveToRight 0.35s ease forwards;
 }
 
 .page__title {
