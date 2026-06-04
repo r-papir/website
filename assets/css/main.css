@@ -93,12 +93,12 @@ a:hover {
   color: var(--text);
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 1000;
+  font-weight: 2000;
   letter-spacing: 0.02em;
 }
 
 .site-nav li a:hover {
-  color: var(--primary);
+  color: #5D3FD3;
   text-decoration: none;
 }
 
