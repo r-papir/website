@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg: #fff;
+  --text: #494e52;
+  --text-light: #bdc1c4;
+  --link: #52adc8;
+  --link-hover: #246578;
+  --border: #f2f3f3;
+  --border-dark: #bdc1c4;
+  --primary: #2f7f93;
+  --masthead-height: 70px;
+  --sidebar-width: 260px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', -apple-system, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* ============================================================
+   MASTHEAD
+   ============================================================ */
+
+.masthead {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--masthead-height);
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+.masthead__inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.site-title:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.site-nav li a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+
+.sidebar {
+  position: fixed;
+  top: var(--masthead-height);
+  left: 0;
+  width: var(--sidebar-width);
+  height: calc(100vh - var(--masthead-height));
+  overflow-y: auto;
+  padding: 2rem 1.5rem 2rem 2rem;
+}
+
+.author__avatar img {
+  width: 100%;
+  display: block;
+}
+
+.author__content {
+  margin-top: 1rem;
+}
+
+.author__name {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem 0;
+  color: var(--text);
+}
+
+.author__bio {
+  font-size: 0.8rem;
+  color: var(--text);
+  margin: 0 0 0.75rem 0;
+  line-height: 1.5;
+}
+
+.author__urls {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.author__urls li {
+  font-size: 0.8rem;
+  margin-bottom: 0.45rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.author__urls li i {
+  width: 16px;
+  text-align: center;
+  color: var(--text-light);
+  flex-shrink: 0;
+}
+
+.author__urls li a,
+.author__urls li span {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.author__urls li a:hover {
+  color: var(--link);
+  text-decoration: none;
+}
+
+/* ============================================================
+   MAIN CONTENT
+   ============================================================ */
+
+.main-content {
+  margin-left: var(--sidebar-width);
+  padding-top: calc(var(--masthead-height) + 2rem);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 4rem;
+  max-width: 900px;
+}
+
+.page__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 1.25rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.page__body p {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.page__body h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.page__body h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.page__body ul,
+.page__body ol {
+  font-size: 0.875rem;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.page__body li {
+  margin-bottom: 0.25rem;
+}
+
+.page__body strong {
+  font-weight: 600;
+}
+
+.page__body a {
+  color: var(--link);
+}
+
+.page__body a:hover {
+  color: var(--link-hover);
+}
+
+.page__body img {
+  max-width: 100%;
+}
+
+/* Stub pages */
+.stub-notice {
+  color: var(--text-light);
+  font-style: italic;
+  font-size: 0.875rem;
+  margin-top: 2rem;
+}
