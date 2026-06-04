@@ -45,7 +45,7 @@ a:hover {
   left: 0;
   right: 0;
   height: var(--masthead-height);
-  background: url('../images/masthead-bg.jpg') center/cover no-repeat;
+  background: url('../../images/masthead-bg.jpg') center/cover no-repeat;
   border-bottom: 1px solid var(--border);
   z-index: 100;
   display: flex;
