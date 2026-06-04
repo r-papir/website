@@ -2,7 +2,7 @@
 
 :root {
   --bg: #fff;
-  --text: #494e52;
+  --text: #000000;
   --text-light: #bdc1c4;
   --link: #5D3FD3;
   --link-hover: #CCCCFF;
@@ -83,7 +83,7 @@ a:hover {
 
 .site-nav {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   list-style: none;
   margin: 0;
   padding: 0;
