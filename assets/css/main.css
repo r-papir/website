@@ -223,6 +223,7 @@ a:hover {
 
 .page__body p {
   font-size: 0.875rem;
+  line-height: 2;
   margin-bottom: 1rem;
   color: var(--text);
 }
