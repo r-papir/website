@@ -264,6 +264,7 @@ a:hover {
 .pub-list {
   list-style: none;
   padding-left: 1.5rem;
+  line-height: 2;
 }
 
 .pub-list li {
