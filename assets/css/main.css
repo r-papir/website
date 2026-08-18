@@ -278,6 +278,15 @@ a:hover {
   left: -1.25rem;
 }
 
+.pub-tag {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #59AEB3;
+  margin-left: 0.5rem;
+}
+
 .page__body strong {
   font-weight: 600;
 }
