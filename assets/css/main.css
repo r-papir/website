@@ -261,6 +261,10 @@ a:hover {
   margin-bottom: 0.25rem;
 }
 
+.pub-list {
+  list-style-type: "▪ ";
+}
+
 .page__body strong {
   font-weight: 600;
 }
