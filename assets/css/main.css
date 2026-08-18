@@ -18,6 +18,7 @@
 html {
   background: var(--bg);
   color-scheme: dark;
+  overscroll-behavior: none;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
   background: var(--bg);
   font-size: 16px;
   line-height: 1.5;
+  overscroll-behavior: none;
 }
 
 a {
