@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;700;800&display=swap');
 
 :root {
-  --bg: #000000;
+  --bg: #0a090d;
   --text: #ffffff;
   --text-light: #bdc1c4;
   --link: #CCCCFF;
@@ -45,18 +45,11 @@ a:hover {
   left: 0;
   right: 0;
   height: var(--masthead-height);
-  background: url('../../images/masthead-bg.jpg') center/cover no-repeat;
+  background: var(--bg);
   border-bottom: 1px solid var(--border);
   z-index: 100;
   display: flex;
   align-items: center;
-}
-
-.masthead::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.85);
 }
 
 .masthead__inner {
