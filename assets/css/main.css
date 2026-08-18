@@ -46,7 +46,6 @@ a:hover {
   right: 0;
   height: var(--masthead-height);
   background: var(--bg);
-  border-bottom: 1px solid var(--border);
   z-index: 100;
   display: flex;
   align-items: center;
