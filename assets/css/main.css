@@ -262,7 +262,18 @@ a:hover {
 }
 
 .pub-list {
-  list-style-type: "▪ ";
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.pub-list li {
+  position: relative;
+}
+
+.pub-list li::before {
+  content: "▪";
+  position: absolute;
+  left: -1.25rem;
 }
 
 .page__body strong {
