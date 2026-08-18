@@ -206,7 +206,7 @@ a:hover {
   padding-left: 3rem;
   padding-right: 3rem;
   padding-bottom: 4rem;
-  animation: scaleUpIn 0.8s ease forwards;
+  animation: scaleUpIn 0.8s ease;
 }
 
 .main-content.is-exiting {
@@ -295,7 +295,12 @@ a:hover {
   height: 83px;
   pointer-events: none;
   z-index: 50;
-  animation: scaleUpIn 0.8s ease forwards;
+  animation: scaleUpIn 0.8s ease;
+}
+
+.cat-sprite--small {
+  width: 70.5px;
+  height: 70.5px;
 }
 
 .cat-sprite.is-exiting {
