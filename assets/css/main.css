@@ -15,6 +15,11 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+html {
+  background: var(--bg);
+  color-scheme: dark;
+}
+
 body {
   margin: 0;
   padding: 0;
