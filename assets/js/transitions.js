@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var content = document.querySelector('.main-content');
+  var exitingElements = document.querySelectorAll('.main-content, .cat-sprite');
 
   document.querySelectorAll('a[href]').forEach(function (link) {
     var href = link.getAttribute('href');
@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
     link.addEventListener('click', function (e) {
       e.preventDefault();
       var target = this.getAttribute('href');
-      content.classList.add('is-exiting');
+      exitingElements.forEach(function (el) {
+        el.classList.add('is-exiting');
+      });
       setTimeout(function () {
         window.location.href = target;
       }, 800);
