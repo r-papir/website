@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;700;800&display=swap');
 
 :root {
-  --bg: #fff;
-  --text: #000000;
+  --bg: #000000;
+  --text: #ffffff;
   --text-light: #bdc1c4;
-  --link: #5D3FD3;
-  --link-hover: #CCCCFF;
-  --border: #f2f3f3;
+  --link: #CCCCFF;
+  --link-hover: #5D3FD3;
+  --border: #333333;
   --border-dark: #bdc1c4;
   --primary: #2f7f93;
   --masthead-height: 80px;
@@ -56,7 +56,7 @@ a:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(0, 0, 0, 0.85);
 }
 
 .masthead__inner {
