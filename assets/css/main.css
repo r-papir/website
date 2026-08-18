@@ -291,20 +291,10 @@ a:hover {
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
-  width: 64px;
-  height: 51.2px;
-  background-image: url('../../images/cat-lick.png');
-  background-repeat: no-repeat;
-  background-size: 960px 51.2px;
-  image-rendering: pixelated;
-  animation: cat-lick 1.2s steps(15) infinite;
+  width: 83px;
+  height: 83px;
   pointer-events: none;
   z-index: 50;
-}
-
-@keyframes cat-lick {
-  from { background-position-x: 0; }
-  to { background-position-x: -960px; }
 }
 
 .page__body strong {
