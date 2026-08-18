@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
       content.classList.add('is-exiting');
       setTimeout(function () {
         window.location.href = target;
-      }, 350);
+      }, 800);
     });
   });
 });

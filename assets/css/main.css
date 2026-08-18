@@ -208,11 +208,11 @@ a:hover {
   padding-left: 3rem;
   padding-right: 3rem;
   padding-bottom: 4rem;
-  animation: scaleUpIn 0.35s ease forwards;
+  animation: scaleUpIn 0.8s ease forwards;
 }
 
 .main-content.is-exiting {
-  animation: moveToRight 0.35s ease forwards;
+  animation: moveToRight 0.8s ease forwards;
 }
 
 .page__title {
