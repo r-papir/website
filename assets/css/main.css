@@ -292,7 +292,7 @@ a:hover {
   bottom: 1.5rem;
   right: 1.5rem;
   width: 83px;
-  height: 83px;
+  height: auto;
   pointer-events: none;
   z-index: 50;
   animation: scaleUpIn 0.8s ease;
@@ -300,7 +300,6 @@ a:hover {
 
 .corner-mascot--small {
   width: 70.5px;
-  height: 70.5px;
 }
 
 .corner-mascot.is-exiting {
