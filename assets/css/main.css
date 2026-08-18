@@ -287,7 +287,7 @@ a:hover {
   margin-left: 0.5rem;
 }
 
-.cat-sprite {
+.corner-mascot {
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
@@ -298,12 +298,12 @@ a:hover {
   animation: scaleUpIn 0.8s ease;
 }
 
-.cat-sprite--small {
+.corner-mascot--small {
   width: 70.5px;
   height: 70.5px;
 }
 
-.cat-sprite.is-exiting {
+.corner-mascot.is-exiting {
   animation: moveToRight 0.8s ease forwards;
 }
 

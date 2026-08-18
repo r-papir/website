@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var exitingElements = document.querySelectorAll('.main-content, .cat-sprite');
+  var exitingElements = document.querySelectorAll('.main-content, .corner-mascot');
 
   document.querySelectorAll('a[href]').forEach(function (link) {
     var href = link.getAttribute('href');
