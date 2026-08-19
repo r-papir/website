@@ -322,9 +322,9 @@ a:hover {
 .page__body a.btn-outline {
   display: inline-block;
   padding: 0.6rem 1.5rem;
-  border: 1px solid var(--link);
+  border: 1px solid #59AEB3;
   border-radius: 0;
-  color: var(--link);
+  color: #59AEB3;
   font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -333,7 +333,7 @@ a:hover {
 }
 
 .page__body a.btn-outline:hover {
-  background: var(--link);
+  background: #59AEB3;
   color: var(--bg);
   text-decoration: none;
 }
