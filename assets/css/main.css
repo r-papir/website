@@ -313,6 +313,31 @@ a:hover {
   font-weight: 600;
 }
 
+.btn-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.page__body a.btn-outline {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  border: 1px solid var(--link);
+  border-radius: 0;
+  color: var(--link);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.page__body a.btn-outline:hover {
+  background: var(--link);
+  color: var(--bg);
+  text-decoration: none;
+}
+
 .page__body a {
   color: var(--link);
 }
