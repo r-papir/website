@@ -23,12 +23,13 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding-top: var(--masthead-height);
   font-family: 'Raleway', -apple-system, sans-serif;
   color: var(--text);
   background: var(--bg);
   font-size: 16px;
   line-height: 1.5;
+  min-height: 100vh;
   overscroll-behavior: none;
 }
 
@@ -117,7 +118,7 @@ a:hover {
 
 .page-container {
   max-width: 1300px;
-  margin: var(--masthead-height) auto 0;
+  margin: 0 auto;
   display: flex;
   align-items: flex-start;
 }
