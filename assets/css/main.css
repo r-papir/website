@@ -438,6 +438,7 @@ a:hover {
   margin-bottom: 0.85rem;
   color: var(--text);
   transition: transform 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* animated teal accent bar in the left gutter */
@@ -514,6 +515,28 @@ a:hover {
   }
 }
 
+/* touch devices have no hover — replay the same effect on tap instead */
+@media (hover: none) {
+  .news-list li:active {
+    transform: translateX(4px);
+  }
+
+  .news-list li:active::before {
+    transform: scaleY(1);
+  }
+
+  .news-list li:active .news-date {
+    opacity: 1;
+  }
+
+  .news-list li:active .news-date::before {
+    width: 1em;
+    margin-right: 0.3rem;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .news-list li,
   .news-list li::before,
@@ -522,7 +545,8 @@ a:hover {
     transition: none;
   }
 
-  .news-list li:hover {
+  .news-list li:hover,
+  .news-list li:active {
     transform: none;
   }
 }
