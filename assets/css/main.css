@@ -406,6 +406,67 @@ a:hover {
   max-width: 100%;
 }
 
+/* ============================================================
+   NEWS
+   ============================================================ */
+
+.news {
+  margin-top: 2.5rem;
+}
+
+.page__body-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list li {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.9;
+  margin-bottom: 0.85rem;
+  color: var(--text);
+}
+
+.news-date {
+  flex-shrink: 0;
+  width: 5.5rem;
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.news-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.news-body em {
+  color: var(--link);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .news-list li {
+    flex-direction: column;
+    gap: 0.15rem;
+    margin-bottom: 1rem;
+  }
+
+  .news-date {
+    width: auto;
+  }
+}
+
 /* Stub pages */
 .stub-notice {
   color: var(--text-light);
