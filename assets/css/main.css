@@ -430,12 +430,36 @@ a:hover {
 }
 
 .news-list li {
+  position: relative;
   display: flex;
   gap: 1rem;
   font-size: 0.875rem;
   line-height: 1.9;
   margin-bottom: 0.85rem;
   color: var(--text);
+  transition: transform 0.2s ease;
+}
+
+/* animated teal accent bar in the left gutter */
+.news-list li::before {
+  content: "";
+  position: absolute;
+  left: -0.75rem;
+  top: 0.2rem;
+  bottom: 0.2rem;
+  width: 2px;
+  background: #59AEB3;
+  transform: scaleY(0);
+  transform-origin: top center;
+  transition: transform 0.2s ease;
+}
+
+.news-list li:hover {
+  transform: translateX(4px);
+}
+
+.news-list li:hover::before {
+  transform: scaleY(1);
 }
 
 .news-date {
@@ -443,6 +467,29 @@ a:hover {
   width: 5.5rem;
   color: #59AEB3; /* matches .btn-outline:hover fill on research page */
   font-weight: 600;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+/* chevron that slides in before the date on hover */
+.news-date::before {
+  content: "\2192";
+  display: inline-block;
+  width: 0;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: width 0.2s ease, margin-right 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+
+.news-list li:hover .news-date {
+  opacity: 1;
+}
+
+.news-list li:hover .news-date::before {
+  width: 1em;
+  margin-right: 0.3rem;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .news-body {
@@ -464,6 +511,19 @@ a:hover {
 
   .news-date {
     width: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .news-list li,
+  .news-list li::before,
+  .news-date,
+  .news-date::before {
+    transition: none;
+  }
+
+  .news-list li:hover {
+    transform: none;
   }
 }
 
