@@ -367,7 +367,7 @@ a:hover {
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
-  color: var(--bg);
+  color: var(--text);
   text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
@@ -387,7 +387,7 @@ a:hover {
 }
 
 .page__body a.btn-outline:hover {
-  color: var(--bg);
+  color: var(--text);
   text-decoration: none;
 }
 
