@@ -367,6 +367,7 @@ a:hover {
   border-radius: 0;
   cursor: pointer;
   position: relative;
+  z-index: 0; /* own stacking context, so the ::after fill paints above the page background instead of behind it */
   background-color: rgba(0, 0, 0, 0);
   color: var(--bg);
   text-decoration: none;
