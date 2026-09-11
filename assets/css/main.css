@@ -388,6 +388,13 @@ a:hover {
   transition: 0.2s;
 }
 
+/* label rides along with the turquoise panel, not the fixed white outline */
+.page__body a.btn-outline .btn-label {
+  display: inline-block;
+  transform: translate(7px, 7px);
+  transition: transform 0.2s ease;
+}
+
 .page__body a.btn-outline:hover {
   color: var(--text);
   text-decoration: none;
@@ -398,11 +405,19 @@ a:hover {
   left: 0;
 }
 
+.page__body a.btn-outline:hover .btn-label {
+  transform: translate(0, 0);
+}
+
 /* touch devices have no hover to reveal the fill — show it by default */
 @media (hover: none) {
   .page__body a.btn-outline::after {
     top: 0;
     left: 0;
+  }
+
+  .page__body a.btn-outline .btn-label {
+    transform: translate(0, 0);
   }
 }
 
