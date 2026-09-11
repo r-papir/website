@@ -441,7 +441,7 @@ a:hover {
 .news-date {
   flex-shrink: 0;
   width: 5.5rem;
-  color: var(--text-light);
+  color: #59AEB3; /* matches .btn-outline:hover fill on research page */
   font-weight: 600;
 }
 
