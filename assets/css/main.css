@@ -389,7 +389,7 @@ a:hover {
 }
 
 .page__body a.btn-outline:hover {
-  color: var(--bg);
+  color: var(--text);
   text-decoration: none;
 }
 
