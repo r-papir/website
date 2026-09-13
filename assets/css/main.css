@@ -535,8 +535,12 @@ a:hover {
 }
 
 .news-body em {
-  color: var(--link);
+  color: var(--text);
   font-style: italic;
+}
+
+.news-body em a {
+  color: var(--link);
 }
 
 @media (max-width: 768px) {
