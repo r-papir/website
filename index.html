@@ -45,8 +45,12 @@
         <li>
           <i class="fa-solid fa-building-columns"></i>
           <span>Columbia University</span>
+          <button type="button" id="columbia-toggle" aria-expanded="false" aria-controls="columbia-email" aria-label="Show Columbia email"
+                  style="background: none; border: 0; padding: 0; cursor: pointer; color: inherit; display: inline-flex;">
+            <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem; transition: transform 0.2s;"></i>
+          </button>
         </li>
-        <li style="padding-left: 1rem;">
+        <li id="columbia-email" style="padding-left: 1rem; display: none;">
           <i class="fa-solid fa-envelope"></i>
           <a href="mailto:r.papirmeister@columbia.edu">r.papirmeister@columbia.edu</a>
         </li>        
@@ -129,6 +133,20 @@
 
   <script src="assets/js/transitions.js"></script>
   <script src="assets/js/nav-toggle.js"></script>
+  <script>
+    (function () {
+      var btn = document.getElementById('columbia-toggle');
+      var item = document.getElementById('columbia-email');
+      if (!btn || !item) return;
+      btn.addEventListener('click', function () {
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        btn.setAttribute('aria-label', open ? 'Show Columbia email' : 'Hide Columbia email');
+        item.style.display = open ? 'none' : 'flex';
+        btn.querySelector('i').style.transform = open ? '' : 'rotate(180deg)';
+      });
+    })();
+  </script>
 </body>
 </html>
 
