@@ -13,7 +13,7 @@
     /* Columbia email dropdown arrow: same turquoise as News dates (dim normally, bright on hover) */
     #columbia-toggle { color: #59AEB3; opacity: 0.7; transition: opacity 0.2s ease; }
     #columbia-toggle:hover, #columbia-toggle:focus-visible { opacity: 1; }
-    #columbia-toggle i { color: inherit; -webkit-text-stroke: 1px currentColor; }
+    #columbia-toggle i { color: inherit; }
   </style>
 </head>
 <body>
@@ -53,7 +53,7 @@
           <span>Columbia University</span>
           <button type="button" id="columbia-toggle" aria-expanded="false" aria-controls="columbia-email" aria-label="Show Columbia email"
                   style="background: none; border: 0; padding: 0; cursor: pointer; display: inline-flex;">
-            <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem; transition: transform 0.2s;"></i>
+            <i style="font-size: 0.65rem; transition: transform 0.2s;"><svg viewBox="0 0 12 8" width="1em" height="0.67em" aria-hidden="true" style="vertical-align: middle;"><polyline points="1,1.5 6,6.5 11,1.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="butt" stroke-linejoin="miter"/></svg></i>
           </button>
         </li>
         <li id="columbia-email" style="padding-left: 1rem; display: none;">
