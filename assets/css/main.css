@@ -676,3 +676,11 @@ a:hover {
     display: none;
   }
 }
+
+/* ============================================================
+   SIDEBAR — Columbia email dropdown arrow
+   same turquoise as News dates: dim normally, bright on hover
+   ============================================================ */
+#columbia-toggle { color: #59AEB3; opacity: 0.7; transition: opacity 0.2s ease; }
+#columbia-toggle:hover, #columbia-toggle:focus-visible { opacity: 1; }
+#columbia-toggle i { color: inherit; }

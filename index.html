@@ -9,12 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
-  <style>
-    /* Columbia email dropdown arrow: same turquoise as News dates (dim normally, bright on hover) */
-    #columbia-toggle { color: #59AEB3; opacity: 0.7; transition: opacity 0.2s ease; }
-    #columbia-toggle:hover, #columbia-toggle:focus-visible { opacity: 1; }
-    #columbia-toggle i { color: inherit; }
-  </style>
 </head>
 <body>
 
@@ -139,20 +133,7 @@
 
   <script src="assets/js/transitions.js"></script>
   <script src="assets/js/nav-toggle.js"></script>
-  <script>
-    (function () {
-      var btn = document.getElementById('columbia-toggle');
-      var item = document.getElementById('columbia-email');
-      if (!btn || !item) return;
-      btn.addEventListener('click', function () {
-        var open = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!open));
-        btn.setAttribute('aria-label', open ? 'Show Columbia email' : 'Hide Columbia email');
-        item.style.display = open ? 'none' : 'flex';
-        btn.querySelector('i').style.transform = open ? '' : 'rotate(180deg)';
-      });
-    })();
-  </script>
+  <script src="assets/js/email-toggle.js"></script>
 </body>
 </html>
 

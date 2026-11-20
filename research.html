@@ -45,7 +45,15 @@
         <li>
           <i class="fa-solid fa-building-columns"></i>
           <span>Columbia University</span>
+          <button type="button" id="columbia-toggle" aria-expanded="false" aria-controls="columbia-email" aria-label="Show Columbia email"
+                  style="background: none; border: 0; padding: 0; cursor: pointer; display: inline-flex;">
+            <i style="font-size: 0.65rem; transition: transform 0.2s;"><svg viewBox="0 0 12 8" width="1em" height="0.67em" aria-hidden="true" style="vertical-align: middle;"><polyline points="1,1.5 6,6.5 11,1.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="butt" stroke-linejoin="miter"/></svg></i>
+          </button>
         </li>
+        <li id="columbia-email" style="padding-left: 1rem; display: none;">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:r.papirmeister@columbia.edu">r.papirmeister@columbia.edu</a>
+        </li>        
         <li>
           <i class="fa-solid fa-envelope"></i>
           <a href="mailto:rachelpapirmeister@gmail.com">rachelpapirmeister@gmail.com</a>
@@ -87,5 +95,6 @@
 
   <script src="assets/js/transitions.js"></script>
   <script src="assets/js/nav-toggle.js"></script>
+  <script src="assets/js/email-toggle.js"></script>
 </body>
 </html>
